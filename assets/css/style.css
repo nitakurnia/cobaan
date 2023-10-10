@@ -1556,6 +1556,45 @@ section {
 
 /* login and register */
 
+/* forum diskusi start */
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CSS untuk form pop-up */
+#popup-form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 700px;
+  height: 400px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+#judul,
+#deskripsi {
+  width: 100%;
+  /* Memperluas input judul dan deskripsi */
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* forum diskusi end */
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
