@@ -406,7 +406,7 @@ h6 {
   background-size: cover;
   position: relative;
   background-color: rgba(0, 0, 0, 0.1);
-  
+
 }
 
 #hero:before {
@@ -484,6 +484,7 @@ h6 {
     line-height: 24px;
   }
 }
+
 /*--------------------------------------------------------------
 # Featured Services
 --------------------------------------------------------------*/
@@ -874,6 +875,7 @@ section {
   transition: 0.9s;
   background-color: #106eea;
 }
+
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
@@ -920,6 +922,7 @@ section {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
 }
+
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
@@ -1470,6 +1473,88 @@ section {
     transform: rotate(360deg);
   }
 }
+
+/* login and register */
+/* login and register */
+.card {
+  max-width: 900px;
+  /* Lebar maksimal card */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form {
+  width: 100%;
+  /* Lebar form */
+  padding-top: 48px;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.password-input {
+  position: relative;
+}
+
+#togglePassword {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.footer-form {
+  text-align: center;
+  margin-top: 95px;
+
+}
+
+.footer-form-regis {
+  text-align: center;
+  margin-top: 30px;
+
+}
+
+.login-sosial-link ul,
+.regis-sosial-link ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.login-sosial-link ul li,
+.regis-sosial-link ul li {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 30px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+
+}
+
+.login-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.btn {
+  width: 13rem;
+}
+
+.btn-regis .btn,
+.btn-login .btn {
+  padding-top: 10px;
+  border-radius: 30px;
+}
+
+/* login and register */
 
 /*--------------------------------------------------------------
 # Footer

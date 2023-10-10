@@ -21,7 +21,7 @@
             </div>
             <div class="row">
                 <div class="login-image col-md-6">
-                    <img src="image/icon-login.png" alt="">
+                    <img src="assets/img/icon-login.png" alt="">
                     <div class="register">
                         <div class="text-login d-flex justify-content-center">
                             <h3>Hallo Friend!</h3>
@@ -49,8 +49,13 @@
                             </div>
                         </div>
                         <div class="btn-login d-flex justify-content-center">
-                            <button type="submit" class="btn btn-danger">Register</button>
+                            <button type="submit" class="btn btn-danger" id="registerButton">Register</button>
                         </div>
+                        <script>
+                            document.getElementById("registerButton").addEventListener("click", function() {
+                                window.location.href = "login.html";
+                            });
+                        </script>
                     </form>
                     <div class="footer-form-regis">
                         <h5>atau lanjutkan dengan</h5>
