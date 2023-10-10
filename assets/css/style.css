@@ -512,7 +512,7 @@ h6 {
 }
 
 .featured-services .icon-box:hover::before {
-  background: #106eea;
+  background: #F64C4C;
   top: 0;
   border-radius: 0px;
 }
@@ -524,7 +524,7 @@ h6 {
 .featured-services .icon i {
   font-size: 48px;
   line-height: 1;
-  color: #106eea;
+  color: #F64C4C;
   transition: all 0.3s ease-in-out;
 }
 
@@ -897,7 +897,7 @@ section {
   left: 50%;
   transform: translateX(-50%);
   font-size: 24px;
-  background: #106eea;
+  background: #F64C4C;
   color: #fff;
   width: 56px;
   height: 56px;
