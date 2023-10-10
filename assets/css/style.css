@@ -1595,6 +1595,16 @@ section {
 
 /* forum diskusi end */
 
+/* halaman laporan start */
+.tombol-laporan {
+  display: flex;
+  padding: 1rem;
+}
+.tombol-laporan #tablecariButton{
+  justify-content: right;
+}
+/* halaman laporan end */
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
