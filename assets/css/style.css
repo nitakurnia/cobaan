@@ -159,8 +159,8 @@ h6 {
 }
 
 .get-started-btn:hover {
-  background: #f30000;
-  color: #fff;
+  background: #ffffff;
+  color: #000000;
 }
 
 @media (max-width: 768px) {
@@ -603,9 +603,9 @@ section {
 .breadcrumbs {
   margin-top: 73px;
   text-align: center;
-  background: #5fcf80;
+  background: #ffffff;
   padding: 30px 0;
-  color: #fff;
+  color: #000000;
 }
 
 @media (max-width: 992px) {
@@ -1563,7 +1563,8 @@ section {
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #de7171;
+  background: #F64C4C;
+  color:  #ffffff;
 }
 
 #footer .footer-top .footer-contact {
