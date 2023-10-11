@@ -842,11 +842,16 @@ section {
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
+#skills {
+  margin-top: -63px;
+}
+
 .skills .progress {
-  height: 60px;
+  height: 50px;
   display: block;
   background: none;
   border-radius: 0;
+  margin-bottom: 10px;
 }
 
 .skills .progress .skill {
@@ -873,7 +878,43 @@ section {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #106eea;
+  background-color: #F64C4C;
+}
+.progress-bar-wrap #Cigugur{
+  width: 20%;
+  height: 10px;
+  transition: 0.9s;
+  background-color: #F64C4C;
+}
+.progress-bar-wrap #cilimus{
+  width: 40%;
+  height: 10px;
+  transition: 0.9s;
+  background-color: #F64C4C;
+}
+.progress-bar-wrap #cigadung{
+  width: 7%;
+  height: 10px;
+  transition: 0.9s;
+  background-color: #F64C4C;
+}
+.progress-bar-wrap #ciawi{
+  width: 9%;
+  height: 10px;
+  transition: 0.9s;
+  background-color: #F64C4C;
+}
+.progress-bar-wrap #kadugede{
+  width: 19%;
+  height: 10px;
+  transition: 0.9s;
+  background-color: #F64C4C;
+}
+.progress-bar-wrap #awirarangan{
+  width: 13%;
+  height: 10px;
+  transition: 0.9s;
+  background-color: #F64C4C;
 }
 
 /*--------------------------------------------------------------
@@ -1564,7 +1605,8 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Memberikan latar belakang hitam dengan transparansi */
+  background: rgba(0, 0, 0, 0.5);
+  /* Memberikan latar belakang hitam dengan transparansi */
   z-index: 999;
 }
 
@@ -1578,67 +1620,72 @@ section {
   padding: 20px;
   border-radius: 5px;
   z-index: 1000;
-  width: 70%; /* Sesuaikan lebar popup sesuai kebutuhan */
-  max-width: 600px; /* Anda bisa menyesuaikan lebar maksimum sesuai kebutuhan */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+  width: 70%;
+  /* Sesuaikan lebar popup sesuai kebutuhan */
+  max-width: 600px;
+  /* Anda bisa menyesuaikan lebar maksimum sesuai kebutuhan */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /* Efek bayangan */
 }
 
 
-    #popup-form h1 {
-        font-size: 15px;
-        margin-bottom: 20px;
-    }
+#popup-form h1 {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
 
-    #popup-form hr {
-      border: none;
-      border-top: 2px solid #000000; /* Warna dan ketebalan garis pembatas sesuai keinginan */
-      width: 100%; /* Sesuaikan lebar garis pembatas sesuai kebutuhan */
-      margin: 5px 5; /* Jarak di atas dan di bawah garis pembatas */
-  }
-  
+#popup-form hr {
+  border: none;
+  border-top: 2px solid #000000;
+  /* Warna dan ketebalan garis pembatas sesuai keinginan */
+  width: 100%;
+  /* Sesuaikan lebar garis pembatas sesuai kebutuhan */
+  margin: 5px 5;
+  /* Jarak di atas dan di bawah garis pembatas */
+}
 
-    #popup-form label {
-        font-weight: 600;
-    }
 
-    #popup-form input[type="text"],
-    #popup-form textarea {
-        width: 100%;
-        padding: 10px;
-        margin: 5px 0;
-        border: 1px solid #ccc;
-        border-radius: 3px;
-    }
+#popup-form label {
+  font-weight: 600;
+}
 
-    #popup-form button[type="submit"] {
-        background-color: #3b8af2;
-        color: #fff;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        cursor: pointer;
-        float: right;
-    }
+#popup-form input[type="text"],
+#popup-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
 
-    #popup-form button[type="submit"]:hover {
-        background-color: #e64a2a;
-    }
+#popup-form button[type="submit"] {
+  background-color: #3b8af2;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right;
+}
 
-    .tutup-popup-form {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      cursor: pointer;
-      font-size: 20px;
-      line-height: 1;
-  }
-  
-    #popup-form button#tutupForm:hover {
-        background-color: #999;
-    }
+#popup-form button[type="submit"]:hover {
+  background-color: #e64a2a;
+}
 
-#judul
-#deskripsi {
+.tutup-popup-form {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
+}
+
+#popup-form button#tutupForm:hover {
+  background-color: #999;
+}
+
+#judul #deskripsi {
   width: 100%;
   /* Memperluas input judul dan deskripsi */
   padding: 10px;
@@ -1655,9 +1702,11 @@ section {
   display: flex;
   padding: 1rem;
 }
-.tombol-laporan #tablecariButton{
+
+.tombol-laporan #tablecariButton {
   justify-content: right;
 }
+
 /* halaman laporan end */
 
 /*--------------------------------------------------------------
