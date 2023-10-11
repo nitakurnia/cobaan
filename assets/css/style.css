@@ -880,37 +880,43 @@ section {
   transition: 0.9s;
   background-color: #F64C4C;
 }
-.progress-bar-wrap #Cigugur{
+
+.progress-bar-wrap #Cigugur {
   width: 20%;
   height: 10px;
   transition: 0.9s;
   background-color: #F64C4C;
 }
-.progress-bar-wrap #cilimus{
+
+.progress-bar-wrap #cilimus {
   width: 40%;
   height: 10px;
   transition: 0.9s;
   background-color: #F64C4C;
 }
-.progress-bar-wrap #cigadung{
+
+.progress-bar-wrap #cigadung {
   width: 7%;
   height: 10px;
   transition: 0.9s;
   background-color: #F64C4C;
 }
-.progress-bar-wrap #ciawi{
+
+.progress-bar-wrap #ciawi {
   width: 9%;
   height: 10px;
   transition: 0.9s;
   background-color: #F64C4C;
 }
-.progress-bar-wrap #kadugede{
+
+.progress-bar-wrap #kadugede {
   width: 19%;
   height: 10px;
   transition: 0.9s;
   background-color: #F64C4C;
 }
-.progress-bar-wrap #awirarangan{
+
+.progress-bar-wrap #awirarangan {
   width: 13%;
   height: 10px;
   transition: 0.9s;
