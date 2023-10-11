@@ -43,9 +43,15 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
+<<<<<<< HEAD
       <h1 class="logo me-auto"><a href="index.html">HealPro</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+=======
+            <h1 class="logo me-auto"><a href="index.html">HEALPRO</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+>>>>>>> 74c72a1fb88c4d4b74d2caa557faa6f37e94c496
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
@@ -208,22 +214,21 @@
                 </div>
                 <div id="overlay">
                     <div id="popup-form">
-                        <h1>Form Diskusi</h1>
+                        <h1>Buat Pertanyaan Baru</h1>
+                        <hr>
                         <form action="">
                             <div>
-                                <label for="judul">Judul Pertanyaan:</label>
+                                <label for="judul">Judul Pertanyaan</label>
                                 <input type="text" id="judul" name="judul" required>
                             </div>
                             <div>
-                                <label for="deskripsi">Deskripsi Pertanyaan:</label>
+                                <label for="deskripsi">Deskripsi Pertanyaan</label>
                                 <textarea id="deskripsi" name="deskripsi" rows="4" required></textarea>
                             </div>
                             <div>
-                                <button type="submit">Kirim</button>
+                                <button type="submit">Buat Pertanyaan</button>
                             </div>
-                            <div>
-                                <button type="button" id="tutupForm">Tutup</button>
-                            </div>
+                            <div id="tutupForm" class="tutup-popup-form">X</div>
                         </form>
                     </div>
                 </div>
@@ -295,6 +300,29 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+    <script>
+        // Ambil tombol "Mulai bertanya" berdasarkan id
+        var bukaFormButton = document.getElementById("bukaForm");
+    
+        // Ambil elemen overlay dan popup form
+        var overlay = document.getElementById("overlay");
+        var popupForm = document.getElementById("popup-form");
+    
+        // Tambahkan event click ke tombol "Mulai bertanya"
+        bukaFormButton.addEventListener("click", function () {
+            overlay.style.display = "block"; // Tampilkan overlay
+            popupForm.style.display = "block"; // Tampilkan popup form
+        });
+    
+        // Tambahkan event click ke tombol "Tutup"
+        var tutupFormButton = document.getElementById("tutupForm");
+        tutupFormButton.addEventListener("click", function () {
+            overlay.style.display = "none"; // Sembunyikan overlay
+            popupForm.style.display = "none"; // Sembunyikan popup form
+        });
+    </script>
+    
 
 </body>
 
