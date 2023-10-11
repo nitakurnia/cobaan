@@ -406,27 +406,10 @@ h6 {
   background-size: cover;
   position: relative;
   background-color: rgba(0, 0, 0, 0.1);
-}
 
-#hero2 {
-  width: 100%;
-  height: 80vh;
-  background: url("../img/bantu\ korban.jpg") top center;
-  background-size: cover;
-  position: relative;
 }
 
 #hero:before {
-  content: "";
-  background: rgba(0, 0, 0, 0.4);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-#hero2:before {
   content: "";
   background: rgba(0, 0, 0, 0.4);
   position: absolute;
@@ -455,22 +438,7 @@ h6 {
   font-family: "Poppins", sans-serif;
 }
 
-#hero2 h1 {
-  margin: 0;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 56px;
-  color: #fff;
-  font-family: "Poppins", sans-serif;
-}
-
 #hero h2 {
-  color: #eee;
-  margin: 10px 0 0 0;
-  font-size: 24px;
-}
-
-#hero2 h2 {
   color: #eee;
   margin: 10px 0 0 0;
   font-size: 24px;
@@ -1596,7 +1564,7 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5); /* Memberikan latar belakang hitam dengan transparansi */
   z-index: 999;
 }
 
@@ -1610,9 +1578,66 @@ section {
   padding: 20px;
   border-radius: 5px;
   z-index: 1000;
+  width: 70%; /* Sesuaikan lebar popup sesuai kebutuhan */
+  max-width: 600px; /* Anda bisa menyesuaikan lebar maksimum sesuai kebutuhan */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Efek bayangan */
 }
 
-#judul,
+
+    #popup-form h1 {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    #popup-form hr {
+      border: none;
+      border-top: 2px solid #000000; /* Warna dan ketebalan garis pembatas sesuai keinginan */
+      width: 100%; /* Sesuaikan lebar garis pembatas sesuai kebutuhan */
+      margin: 5px 5; /* Jarak di atas dan di bawah garis pembatas */
+  }
+  
+
+    #popup-form label {
+        font-weight: 600;
+    }
+
+    #popup-form input[type="text"],
+    #popup-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+
+    #popup-form button[type="submit"] {
+        background-color: #3b8af2;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        float: right;
+    }
+
+    #popup-form button[type="submit"]:hover {
+        background-color: #e64a2a;
+    }
+
+    .tutup-popup-form {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      font-size: 20px;
+      line-height: 1;
+  }
+  
+    #popup-form button#tutupForm:hover {
+        background-color: #999;
+    }
+
+#judul
 #deskripsi {
   width: 100%;
   /* Memperluas input judul dan deskripsi */
