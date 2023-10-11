@@ -330,6 +330,28 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/script.js"></script>
 
+     <script>
+        // Ambil tombol "Mulai bertanya" berdasarkan id
+        var bukaFormButton = document.getElementById("bukaForm");
+    
+        // Ambil elemen overlay dan popup form
+        var overlay = document.getElementById("overlay");
+        var popupForm = document.getElementById("popup-form");
+    
+        // Tambahkan event click ke tombol "Mulai bertanya"
+        bukaFormButton.addEventListener("click", function () {
+            overlay.style.display = "block"; // Tampilkan overlay
+            popupForm.style.display = "block"; // Tampilkan popup form
+        });
+    
+        // Tambahkan event click ke tombol "Tutup"
+        var tutupFormButton = document.getElementById("tutupForm");
+        tutupFormButton.addEventListener("click", function () {
+            overlay.style.display = "none"; // Sembunyikan overlay
+            popupForm.style.display = "none"; // Sembunyikan popup form
+        });
+    </script>
+
 </body>
 
 </html>
