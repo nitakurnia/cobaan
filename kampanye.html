@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube-like Video Page</title>
+    <!-- Sertakan Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Gaya untuk tema warna utama */
+        body {
+            background-color: #f1f1f1;
+        }
+
+        .navbar {
+            background-color: #F64C4C;
+        }
+
+        .navbar-dark .navbar-nav .nav-link {
+            color: #fff;
+        }
+
+        .navbar-dark .navbar-toggler-icon {
+            background-color: #fff;
+        }
+
+        .btn-primary {
+            background-color: #F64C4C;
+            border-color: #F64C4C;
+        }
+
+        .btn-primary:hover {
+            background-color: #E54343;
+            border-color: #E54343;
+        }
+
+        .card {
+            border: none;
+        }
+
+        .card-img-top {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .card-title {
+            font-size: 20px;
+        }
+
+        .card-text {
+            color: #777;
+        }
+    </style>
+    <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+ <!-- ======= Header ======= -->
+ <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="index.html">HealPro</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="active" href="index.html" id="home">Home</a></li>
+          <li><a href="konsultasi.html" id="konsultasi">consultan</a></li>
+          <li><a href="#contact" >statistic</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="produk.html">Product</a></li>         
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <a href="courses.html" class="get-started-btn">Sign up</a>
+
+    </div>
+  </header><!-- End Header -->
+  <!-- Pencarian Video -->
+<br><br><br>
+<!-- Pencarian Video -->
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="input-group search-bar">
+                <input type="text" class="form-control search-input" placeholder="Cari video...">
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="button">Cari</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Daftar Video -->
+<div class="container mt-4">
+    <h2 class="text-center mb-4">Video Kampanye</h2>
+    <div class="row">
+        <!-- Contoh Card Video -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="assets/img/kampanye5.jpg" class="card-img-top" alt="Video 1" data-toggle="modal" data-target="#videoModal1">
+                <div class="card-body">
+                    <h5 class="card-title">Bagaimana mencegah TBC</h5>
+                    <p class="card-text">"Jaga kebersihan, hindari kontak, vaksinasi, segera konsultasi medis,agar di obati"</p>
+                </div>
+            </div>
+        </div>
+        <!-- Contoh Card Video -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="assets/img/kampanye4.jpg" class="card-img-top" alt="Video 2" data-toggle="modal" data-target="#videoModal2">
+                <div class="card-body">
+                    <h5 class="card-title">Pencegahan Corona</h5>
+                    <p class="card-text">"Gunakan masker, jaga jarak, cuci tangan, hindari kerumunan, vaksinasi."</p>
+                </div>
+            </div>
+        </div>
+        <!-- Contoh Card Video -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="assets/img/kampanye6.jpeg" class="card-img-top" alt="Video 3" data-toggle="modal" data-target="#videoModal3">
+                <div class="card-body">
+                    <h5 class="card-title">Mengenal masker</h5>
+                    <p class="card-text">Perlindungan wajah, mencegah penyebaran penyakit, melindungi diri dan orang lain</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal untuk Memutar Video -->
+<div class="modal fade" id="videoModal1" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="videoModal2" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="videoModal3" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/VIDEO_ID_3" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 footer-links">
+            <h4>HealPro</h4>
+            <p>Kami mempunyai visi untuk menciptakan dunia 
+              yang bebas dari Demam Berdarah Dengue (DBD) melalui
+               upaya pencegahan, pengobatan, dan penyuluhan yang berkelanjutan.
+                Kami percaya bahwa
+               setiap orang berhak hidup sehat tanpa terancam oleh penyakit ini.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 footer-links">
+            <h4>Contac person</h4>
+            <p><i class="bx bx-home"> </i> Alamat : <br>
+             <i>|</i>  jalan Merak Raya Rewwin No 6, Sidoarjo, Jawa Timur, Indonesia</p>
+             <p><i class="bx bx-message"></i> Email : <br>
+              <i>|</i>HealPro@gmail.com</p>
+             <p><i class="bx bx-phone"></i> telpon : <br>
+              <i>|</i>085 2211-2342</p>
+             
+          </div>
+
+         
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Newsletter</h4>
+            <p>Daftar ke newsletter kami untuk mendapatkan artikel terbaru, kode voucher lookbooks langsung ke inbox Anda</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form><br>
+            <h4>IKUTI KAMI DI </h4>
+            <div class="social-links text-center text-md-right pt-3 pt-md-0">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+          
+
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
