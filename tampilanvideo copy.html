@@ -1,13 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Contact</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Tampilan Video YouTube</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.iconbox.io/iconbox.css">
+  <style>
+    /* CSS kustom Anda */
+    .description, .comments {
+      margin: 20px 0;
+      font-size: 14px;
+    }
 
+    .comment {
+      display: flex;
+      margin-bottom: 20px;
+    
+    }
+
+    .avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .comment-text {
+      flex: 1;
+      font-size: 14px;
+    }
+    .navbar {
+  border-radius: 10px; 
+ 
+}
+ 
+
+    .related-video {
+      margin: 10px 0;
+    }
+  </style>
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -29,120 +59,94 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Mentor
-  * Updated: Sep 18 2023 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
-
 <body>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
+ <!-- ======= Header ======= -->
+ <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
       <h1 class="logo me-auto"><a href="index.html">HealPro</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-      <nav id="navbar" class="navbar-fitur order-last order-lg-0 ">
+      <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="active" href="index.html" id="home">Beranda</a></li>
-          <li><a href="about.html">Tentang Kami</a></li>
-          <li><a href="contact.html">Kontak</a></li>
+          <li><a class="active" href="index.html" id="home">Home</a></li>
+          <li><a href="konsultasi.html" id="konsultasi">consultan</a></li>
+          <li><a href="#contact">statistic</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="produk.html">Product</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-      <a href="regis.html" class="get-started-btn">Registrasi</a>
+
+      <a href="regis.html" class="get-started-btn">Sign up</a>
 
     </div>
   </header><!-- End Header -->
+<br><br><br>
 
-  <main id="main">
-
-    <!-- ======= Breadcrumbs ======= -->
-    <div class="breadcrumbs" data-aos="fade-in">
-      <div class="container">
-        <h2>Selamat Datang di Halaman Kontak Kami</h2>
-        <p>Kami senang Anda mengunjungi situs web kami dan tertarik untuk berhubungan dengan kami mengenai informasi
-          terkait Demam Berdarah Dengue (DBD). Kami sangat menghargai masukan Anda, pertanyaan, atau kolaborasi yang
-          mungkin ingin Anda diskusikan. Ada beberapa cara untuk menghubungi tim kami: </p>
-      </div>
-    </div><!-- End Breadcrumbs -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div data-aos="fade-up">
-        <iframe style="border:0; width: 100%; height: 350px;"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8151.014998579119!2d106.66125401114928!3d-6.326644918860568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e4dd6109709b%3A0x7ac9356148d1b122!2sMA%20Negeri%201%20Tangerang%20Selatan!5e0!3m2!1sid!2sid!4v1696917776293!5m2!1sid!2sid"
-          frameborder="0" allowfullscreen></iframe>
-      </div>
-
-      <div class="container" data-aos="fade-up">
-
-        <div class="row mt-5">
-
-          <div class="col-lg-4">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Lokasi:</h4>
-                <p>Jl.kademangan Kec.Serpong Tangerang Selatan Banten,53213</p>
-              </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>Healpro@gmail.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+62 123 4567 8910</p>
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="col-lg-8 mt-5 mt-lg-0">
-
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Nama" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subjek" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Pesan" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Pesan kamu telah terkirim , Terima kasih</div>
-              </div>
-              <div class="text-center"><button type="submit">Kirim Pesan</button></div>
-            </form>
-
-          </div>
-
+  <div class="container mt-2">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+          <a class="navbar-brand" href="#">Video Kampanye</a>
+          <form class="form-inline my-2 my-lg-0 ml-auto">
+            <input class="form-control mr-sm-2" type="search" placeholder="Cari video" aria-label="Search">
+            <button class="btn-sm btn-outline-dark p-7 mr-2" type="submit">Cari</button>
+          </form>
+        </nav>
+      </header>
+    
+  </div>
+  <div class="container mt-2">
+    <div class="row">
+      <div class="col-lg-8">
+        <img src="assets/img/kampanye5.jpg" alt="" style="width: 750px; height: 450px;">
+        <h2 class="mt-4">Bagaimana mencegah TBC</h2>
+        <p class="text-muted">Ditonton 1.5M kali • 2 hari yang lalu</p>
+        <hr>
+        <div class="description">
+          <h3>Deskripsi</h3>
+          <p>video ini akan menjelaskan bagaimana caranya mencegah TBC</p>
         </div>
-
+        <hr>
+        <div class="comments">
+          <h3>Komentar</h3>
+          <!-- Daftar komentar akan ditampilkan di sini -->
+          <div class="comment">
+            <img src="assets/img/team/team-2.jpg" alt="Avatar" class="avatar">
+            <div class="comment-text">
+              <h5>Syilea</h5>
+              <p>video yang sangat bermanfaat</p>
+            </div>
+          </div>
+          <!-- Tambahkan lebih banyak komentar sesuai kebutuhan -->
+        </div>
       </div>
-    </section><!-- End Contact Section -->
-
-  </main><!-- End #main -->
-
+      <div class="col-lg-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Video Terkait</h5>
+            <!-- Daftar video terkait akan ditampilkan di sini -->
+            <div class="related-video">
+                <img src="assets/img/kampanye6.jpeg" alt="Thumbnail" style="width: 270px; height: 150px;">
+                <h6 class="card-subtitle mb-2 text-muted mt-2">Penting nya masker untuk kesehatan</h6>
+                <p class="card-text">Ditonton 1.2M kali</p>
+              </div>
+             <hr>
+              <div class="related-video">
+                <img src="assets/img/kampanye4.jpg" alt="Thumbnail" style="width: 270px; height: 150px;">
+                <h6 class="card-subtitle mb-2 text-muted mt-2">pencegahan corona</h6>
+                <p class="card-text">Ditonton 1.2M kali</p>
+              </div>
+            <!-- Tambahkan lebih banyak video terkait sesuai kebutuhan -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
   <!-- ======= Footer ======= -->
   <footer id="footer">
 
@@ -170,6 +174,9 @@
             </p>
 
           </div>
+
+
+
           <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Newsletter</h4>
             <p>Daftar ke newsletter kami untuk mendapatkan artikel terbaru, kode voucher lookbooks langsung ke inbox
@@ -186,6 +193,8 @@
               <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
             </div>
           </div>
+
+
         </div>
       </div>
     </div>

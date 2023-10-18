@@ -44,23 +44,20 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
+
       <h1 class="logo me-auto"><a href="index.html">HealPro</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-      <nav id="navbar" class="navbar order-last order-lg-0">
+      <nav id="navbar" class="navbar-fitur order-last order-lg-0 ">
         <ul>
-          <li><a class="active" href="index.html" id="home">Home</a></li>
-          <li><a href="konsultasi.html" id="konsultasi">consultan</a></li>
-          <li><a href="#contact">statistic</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="produk.html">Product</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a class="active" href="index.html" id="home">Beranda</a></li>
+          <li><a href="about.html">Tentang Kami</a></li>
+          <li><a href="contact.html">Kontak</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-
-      <a href="regis.html" class="get-started-btn">Sign up</a>
+      <a href="regis.html" class="get-started-btn">Registrasi</a>
 
     </div>
   </header><!-- End Header -->
@@ -81,49 +78,134 @@
           <div class="col-lg-4 col-md-4">
             <div class="icon-box">
               <i class="ri-database-2-line" style="color: #47aeff;"></i>
-              <h3><a href="">Rp. 20.000</a></h3>
+              <h3><a href=""> <input type="number" id="jumlah1" value="20000" style="display: none;"> Rp. 20.000</a>
+              </h3>
             </div>
           </div>
           <div class="col-lg-4 col-md-4 mt-4 mt-md-0">
             <div class="icon-box">
               <i class="ri-database-2-line" style="color: #47aeff;"></i>
-              <h3><a href="">Rp. 30.000</a></h3>
+              <h3><a href=""><input type="number" id="jumlah2" value="30000" style="display: none;">Rp. 30.000</a></h3>
             </div>
           </div>
           <div class="col-lg-4 col-md-4 mt-4 mt-md-0">
             <div class="icon-box">
               <i class="ri-database-2-line" style="color: #47aeff;"></i>
-              <h3><a href="">Rp. 50.000</a></h3>
+              <h3><a href=""><input type="number" id="jumlah3" value="50000" style="display: none;">Rp. 50.000</a></h3>
             </div>
           </div>
-          <div class="col-lg-4 col-md-4 mt-4 mt-lg-0">
+          <div class="col-lg-4 col-md-4 mt-4 ">
             <div class="icon-box">
               <i class="ri-database-2-line" style="color: #47aeff;"></i>
-              <h3><a href="">Rp. 75.000</a></h3>
+              <h3><a href=""><input type="number" id="jumlah4" value="75000" style="display: none;">Rp. 75.000</a></h3>
             </div>
           </div>
           <div class="col-lg-4 col-md-4 mt-4">
             <div class="icon-box">
               <i class="ri-database-2-line" style="color: #47aeff;"></i>
-              <h3><a href="">Rp. 100.000</a></h3>
+              <h3><a href=""><input type="number" id="jumlah5" value="100000" style="display: none;">Rp. 100.000</a>
+              </h3>
             </div>
           </div>
           <div class="col-lg-4 col-md-4 mt-4">
             <div class="icon-box">
               <i class="ri-database-2-line" style="color: #47aeff;"></i>
-              <h3><a href="">Rp. 200.000</a></h3>
+              <h3><a href=""><input type="number" id="jumlah6" value="200000" style="display: none;">Rp. 200.000</a>
+              </h3>
             </div>
           </div>
+          <div class="col-lg-4 col-md-4 mt-4">
+            <div class="icon-box">
+              <i class="ri-database-2-line" style="color: #47aeff;"></i>
+              <form action="">
+                <label for="jumlah">Total : Rp.</label>
+                <input type="number" class="jumlah" id="jumlah">
+              </form>
+            </div>
+          </div>
+
         </div>
 
       </div>
       <div class="trainer-profile d-flex justify-content-center mt-5">
         <button id="donasi2" type="submit" style="width: 380px; " class="btn btn-danger">Donasi</button>
+        <div id="overlay">
+          <div id="popup-form">
+            <h1>Nota : </h1>
+            <hr>
+            <form action="">
+              <div>
+                <label for="deskripsi">Detail:</label>
+                <textarea id="deskripsi" name="deskripsi" rows="4" required>
+                  Nama : Nana
+                  Donasi Sebesar : Rp.
+                  Terimakasih telah berdonasi Kepada korban penyakit DBD semoga amal dan perbuatan di terima disisinya
+                </textarea>
+              </div>
+              <div>
+                <button id="kembali" type="button"
+                  onclick="alert('Terimakasih karena telah berdonasi')">Lanjutkan</button>
+              </div>
+              <div id="tutupForm" class="tutup-popup-form">X</div>
+            </form>
+          </div>
+        </div>
         <script>
-          document.getElementById("donasi2").addEventListener("click", function () {
-            window.location.href = "#";
+          let kartu = document.querySelectorAll(".icon-box");
+          kartu.forEach(function (card) {
+            card.addEventListener("click", function () {
+              // Ambil elemen input dalam kartu yang diklik
+              let inputElement = card.querySelector("input[type=number]");
+
+              // Jika elemen input ditemukan
+              if (inputElement) {
+                // Ambil nilainya
+                let nilai = inputElement.value;
+
+                // Setel nilai ke elemen input "jumlah" pada form
+                let jumlahFormInput = document.getElementById("jumlah");
+                jumlahFormInput.value = nilai;
+
+              }
+            });
           });
+
+          document.getElementById("donasi2").addEventListener("click", function () {
+            let jumlahFormInput = document.getElementById("jumlah"); // Mendapatkan elemen input dengan ID "jumlah"
+            let nilaiDonasi = jumlahFormInput.value; // Mengambil nilai dari elemen input
+            console.log(nilaiDonasi)
+            let konfirmasi = confirm(`Donasi Anda adalah: Rp.${nilaiDonasi}, klik OK untuk melanjutkan atau Cancel untuk membatalkan.`);
+
+            if (konfirmasi) {
+              var bukaFormButton = document.getElementById("donasi2");
+              // Ambil elemen overlay dan popup form
+              var overlay = document.getElementById("overlay");
+              var popupForm = document.getElementById("popup-form");
+
+              var deskripsiTextarea = document.getElementById("deskripsi");
+              deskripsiTextarea.value = `Nama : Nana \n Jumlah Donasi : ${nilaiDonasi} \n Terimakasih atas Donasi anda semoga kelak cepat diterima disisinya dengan baik`;
+              // Tambahkan event click ke tombol "Mulai bertanya"
+              bukaFormButton.addEventListener("click", function () {
+                overlay.style.display = "block"; // Tampilkan overlay
+                popupForm.style.display = "block"; // Tampilkan popup form
+              });
+
+              // Tambahkan event click ke tombol "Tutup"
+              var tutupFormButton = document.getElementById("tutupForm");
+              tutupFormButton.addEventListener("click", function () {
+                overlay.style.display = "none"; // Sembunyikan overlay
+                popupForm.style.display = "none"; // Sembunyikan popup form
+              });
+              let kembali = document.getElementById("kembali");
+              kembali.addEventListener("click", function () {
+                window.location.href = "index.html";
+                exit;
+              });
+            }
+          });
+
         </script>
+
       </div>
     </section><!-- End Features Section -->
   </main>
